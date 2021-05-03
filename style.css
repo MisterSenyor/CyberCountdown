@@ -1,0 +1,37 @@
+body {
+    background-color: #5f5f5f;
+}
+@font-face {
+    font-family: extremely_normal;
+    src: url('Stranger\ back\ in\ the\ Night.ttf');
+}
+@font-face {
+    font-family: less_normal;
+    src: url('who\ asks\ satan.ttf');
+}
+#clock {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: red;
+    font-size: 169px;
+    text-align: center;
+    font-family: extremely_normal;
+}
+.text {
+    color: rgb(187, 52, 52);
+    text-align: center;
+    font-size: 69px;
+    font-family: less_normal;
+    margin-bottom: 0px;
+}
+#blackcox {
+    width: 109px;
+    height: 100px;
+    position: absolute;
+    background: black;
+    left: 15%;
+}
+.desc {
+    position: aboslute;
+    top: 80%;
+}
