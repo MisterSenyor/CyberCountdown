@@ -1,11 +1,13 @@
-function startTime() {
-    var goal = new Date('May 26, 2021 00:00:00');
+function startTime(date) {
+    var goal = new Date(date);
     var time = new Date();
-    var gDays = goal.getDate() * 24;
+    var gYears = goal.getFullYear() * 365;
+    var gDays = (gYears + goal.getDate()) * 24;
     var gHours = goal.getHours() + gDays;
     var gMinutes = goal.getMinutes();
     var gSeconds = goal.getSeconds();
-    var days = time.getDate() * 24;
+    var years = time.getFullYear() * 365;
+    var days = (years + time.getDate()) * 24;
     var hours = time.getHours() + days;
     var minutes = time.getMinutes();
     var seconds = time.getSeconds();
@@ -24,11 +26,34 @@ function startTime() {
         }
         gSeconds += 60;
     }
-    gSeconds = checkTime(gSeconds)
-    gMinutes = checkTime(gMinutes)
-    gHours = checkTime(gHours)
+    if (gHours < 0) {
+        if (date == "June 1, 2023 00:00:00") {
+            return;
+        }
+        else {
+            date = "June 1, 2023 00:00:00";
+            var elem = document.createElement("img")
+            elem.setAttribute("src", "https://www.jing.fm/clipimg/detail/129-1292081_padlock-clipart-key-clip-art-lock.png");
+            elem.setAttribute("class", "d")
+            document.getElementById("blackcox").appendChild(elem);
+
+            const descs = [...document.getElementsByClassName("desc")];
+            descs[0].innerHTML = "this joke is locked, it will unlock in";
+            descs[1].innerHTML = "the second semester of 12th grade";
+
+            const texts = [...document.getElementsByClassName("text")];
+            texts[0].innerHTML = "TIME UNTIL WE HAND IN 12TH GRADE CYBER PROJECTS:";
+            texts[1].innerHTML = "PREPARE TO DIE.... EVEN MORE :)";
+
+            startTime(date);
+            return;
+        }
+    }
+    gSeconds = checkTime(gSeconds);
+    gMinutes = checkTime(gMinutes);
+    gHours = checkTime(gHours);
     document.getElementById("clock").innerHTML =  gHours + ":" + gMinutes + ":" + gSeconds;
-    var t = setTimeout(startTime, 1000);
+    var t = setTimeout(startTime, 1000, date);
 }
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10

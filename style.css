@@ -31,6 +31,12 @@ body {
     background: black;
     left: 15%;
 }
+#blackcox img {
+    width: 109px;
+    height: 100px;
+    position: absolute;
+    background: black;
+}
 .desc {
     position: aboslute;
     top: 80%;
