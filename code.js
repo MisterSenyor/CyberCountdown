@@ -31,24 +31,24 @@ function startTime(date) {
         if (date == "June 1, 2023 00:00:00") {
             return;
         }
-        else if false {
-            date = "June 1, 2023 00:00:00";
-            var elem = document.createElement("img")
-            elem.setAttribute("src", "https://www.jing.fm/clipimg/detail/129-1292081_padlock-clipart-key-clip-art-lock.png");
-            elem.setAttribute("class", "d")
-            document.getElementById("blackcox").appendChild(elem);
+//         else if false {
+//             date = "June 1, 2023 00:00:00";
+//             var elem = document.createElement("img")
+//             elem.setAttribute("src", "https://www.jing.fm/clipimg/detail/129-1292081_padlock-clipart-key-clip-art-lock.png");
+//             elem.setAttribute("class", "d")
+//             document.getElementById("blackcox").appendChild(elem);
 
-            const descs = [...document.getElementsByClassName("desc")];
-            descs[0].innerHTML = "this joke is locked, it will unlock in";
-            descs[1].innerHTML = "the second semester of 12th grade";
+//             const descs = [...document.getElementsByClassName("desc")];
+//             descs[0].innerHTML = "this joke is locked, it will unlock in";
+//             descs[1].innerHTML = "the second semester of 12th grade";
 
-            const texts = [...document.getElementsByClassName("text")];
-            texts[0].innerHTML = "TIME UNTIL WE HAND IN 12TH GRADE CYBER PROJECTS:";
-            texts[1].innerHTML = "PREPARE TO DIE.... EVEN MORE :)";
+//             const texts = [...document.getElementsByClassName("text")];
+//             texts[0].innerHTML = "TIME UNTIL WE HAND IN 12TH GRADE CYBER PROJECTS:";
+//             texts[1].innerHTML = "PREPARE TO DIE.... EVEN MORE :)";
 
-            startTime(date);
-            return;
-        }
+//             startTime(date);
+//             return;
+//         }
     }
     gSeconds = checkTime(gSeconds);
     gMinutes = checkTime(gMinutes);
