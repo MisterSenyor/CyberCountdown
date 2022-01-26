@@ -1,4 +1,5 @@
 function startTime(date) {
+    
     var goal = new Date(date);
     var time = new Date();
     var gYears = goal.getFullYear() * 365;
