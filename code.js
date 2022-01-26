@@ -31,7 +31,7 @@ function startTime(date) {
         if (date == "June 1, 2023 00:00:00") {
             return;
         }
-        else {
+        else if false {
             date = "June 1, 2023 00:00:00";
             var elem = document.createElement("img")
             elem.setAttribute("src", "https://www.jing.fm/clipimg/detail/129-1292081_padlock-clipart-key-clip-art-lock.png");
