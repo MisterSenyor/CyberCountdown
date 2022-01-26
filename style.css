@@ -30,6 +30,7 @@ body {
     position: absolute;
     background: black;
     left: 15%;
+    color: red;
 }
 #blackcox img {
     width: 109px;
